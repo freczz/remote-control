@@ -1,4 +1,4 @@
-import { DRAW_COMMANDS, MOUSE_COMMANDS, PRINT_COMMANDS } from "../constants";
+import { DRAW_COMMANDS, MOUSE_COMMANDS, PRINT_COMMAND } from "../constants";
 import { ICommandData } from "../inderfaces";
 
 export const parseCommand = (command: string): ICommandData => {
@@ -12,6 +12,6 @@ export const validateCommand = (command: string): boolean => {
   return (
     MOUSE_COMMANDS.includes(actionName) ||
     DRAW_COMMANDS.includes(actionName) ||
-    PRINT_COMMANDS.includes(actionName)
+    PRINT_COMMAND === actionName
   );
 };

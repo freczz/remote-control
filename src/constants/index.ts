@@ -1,12 +1,14 @@
 export const INVALID_DATA = "Invalid data";
 
+export const SCREEN_REGION_SQUARE_WIDTH = 200;
+
 export enum COMMAND_TYPES {
   mouse = "mouse",
   draw = "draw",
-  print = "print"
+  prnt = "prnt"
 }
 
-export enum MOUSE_COMMAND_TYPES {
+export enum MOUSE_SUB_COMMANDS {
   up = "up",
   down = "down",
   right = "right",
@@ -22,7 +24,7 @@ export const MOUSE_COMMANDS = [
   "mouse_position",
 ];
 
-export enum DRAW_COMMAND_TYPES {
+export enum DRAW_SUB_COMMANS {
   circle = "circle",
   rectangle = "rectangle",
   square = "square",
@@ -34,4 +36,6 @@ export const DRAW_COMMANDS = [
   "draw_square",
 ];
 
-export const PRINT_COMMANDS = ["prnt_scrn"];
+export const PRINT_SUB_COMMAND = "scrn";
+
+export const PRINT_COMMAND = "prnt_scrn";

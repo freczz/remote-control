@@ -1,19 +1,19 @@
 import { mouse, up, down, left, right, Button, straightTo } from "@nut-tree/nut-js";
-import { DRAW_COMMAND_TYPES } from "../constants";
+import { DRAW_SUB_COMMANS } from "../constants";
 
 export const drawShape = async(cmdSubType: string, value: string[]): Promise<string> => {
   let message: string = '';
 
   switch(cmdSubType) {
-    case DRAW_COMMAND_TYPES.circle:
+    case DRAW_SUB_COMMANS.circle:
       await drawCircle(+value[0]);
       message = `draw_circle_${value[0]}px`;
       break;
-    case DRAW_COMMAND_TYPES.rectangle:
+    case DRAW_SUB_COMMANS.rectangle:
       await drawRectangle(+value[0], +value[1]);
       message = `draw_rectangle_${value[0]}px,${value[1]}px`;
       break;
-    case DRAW_COMMAND_TYPES.square:
+    case DRAW_SUB_COMMANS.square:
       await drawRectangle(+value[0], +value[0]);
       message = `draw_square_${+value[0]}px`;
       break;

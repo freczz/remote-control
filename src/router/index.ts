@@ -22,8 +22,8 @@ export const router = async (command: string, stream: internal.Duplex): Promise<
     case COMMAND_TYPES.draw:
       message = await drawShape(cmdSubType, value);
       break;
-    case COMMAND_TYPES.print:
-      // message = await printScreen(cmdSubType);
+    case COMMAND_TYPES.prnt:
+      message = await printScreen(cmdSubType);
       break;
   }
 
