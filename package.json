@@ -12,6 +12,7 @@
     "license": "ISC",
     "devDependencies": {
         "@types/node": "^18.11.18",
+        "@types/ws": "^8.5.4",
         "@typescript-eslint/eslint-plugin": "^5.48.2",
         "@typescript-eslint/parser": "^5.48.2",
         "@webpack-cli/generators": "^3.0.1",
